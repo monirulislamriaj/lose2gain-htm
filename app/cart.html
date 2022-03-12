@@ -1,0 +1,152 @@
+@@include('header.htm', {"no-shapes": "d-none", "bg": "bg-white"})
+
+<section class="pt-50">
+   <div class="container">
+      <div class="row justify-content-center">
+         <div class="col-lg-7 col-md-10 text-center mb-50">
+            <h2 class="section-title">Your Cart</h2>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-12">
+            <div class="product-list">
+               <form class="cart-form" action="#" method="post">
+                  <div class="table-responsive">
+                     <table class="table" cellspacing="0">
+                        <thead>
+                           <tr>
+                              <th class="product-thumbnail">&nbsp;</th>
+                              <th class="product-name">Product</th>
+                              <th class="product-price">Price</th>
+                              <th class="product-quantity">Quantity</th>
+                              <th class="product-subtotal">Total</th>
+                              <th class="product-remove">&nbsp;</th>
+                           </tr>
+                        </thead>
+               
+                        <tbody>
+                           <tr class="cart_item">
+                              <td class="product-thumbnail" data-title="Thumbnail">
+                                 <a href="#!"><img src="images/shop/products/01.jpg" class="" alt="" width="100"></a>
+                              </td>
+               
+                              <td class="product-name" data-title="Product">
+                                 <a href="#!" class="text-black-200 font-weight-600">Oxtra Vegan</a>
+                              </td>
+               
+                              <td class="product-price" data-title="Price">
+                                 <span class="amount"><span class="currencySymbol">$</span>90.00</span>
+                              </td>
+               
+                              <td class="product-quantity" data-title="Quantity">
+                                 <div class="quantity">
+                                    <label class="sr-only">Quantity</label>
+               
+                                    <form class="mr-3" action="#!">
+                                       <div class="number-input">
+                                          <button type="button" onclick="this.parentNode.querySelector('.quantity').stepDown()"></button>
+                                          <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                          <button type="button" onclick="this.parentNode.querySelector('.quantity').stepUp()" class="plus"></button>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </td>
+                              <td class="product-subtotal" data-title="Total">
+                                 <span class="amount">
+                                    <span class="currencySymbol">$</span>90.00</span>
+                              </td>
+               
+                              <td class="product-remove" data-title="Remove">
+                                 <a href="#!" class="text-black-200 font-weight-bold h3 text-decoration-none">×</a>
+                              </td>
+                           </tr>
+               
+                           <tr class="cart_item">
+               
+                              <td class="product-thumbnail" data-title="Thumbnail">
+                                 <a href="#!"><img src="images/shop/products/02.jpg" class="" alt="" width="100"></a>
+                              </td>
+               
+                              <td class="product-name" data-title="Product">
+                                 <a href="#!" class="text-black-200 font-weight-600">Organic Tattva</a>
+                              </td>
+               
+                              <td class="product-price" data-title="Price">
+                                 <span class="amount"><span class="currencySymbol">$</span>90.00</span>
+                              </td>
+               
+                              <td class="product-quantity" data-title="Quantity">
+                                 <div class="quantity">
+                                    <label class="sr-only">Quantity</label>
+
+                                    <form class="mr-3" action="#!">
+                                       <div class="number-input">
+                                          <button type="button" onclick="this.parentNode.querySelector('.quantity').stepDown()"></button>
+                                          <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                          <button type="button" onclick="this.parentNode.querySelector('.quantity').stepUp()" class="plus"></button>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </td>
+                              <td class="product-subtotal" data-title="Total">
+                                 <span class="amount">
+                                    <span class="currencySymbol">$</span>90.00</span>
+                              </td>
+                              <td class="product-remove" data-title="Remove">
+                                 <a href="#!" class="text-black-200 font-weight-bold h3 text-decoration-none">×</a>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <div class="row justify-content-between align-items-center">
+         <div class="col-lg-6 col-md-8">
+            <div class="input-group">
+               <input type="text" class="form-control shadow-none" placeholder="Coupon code">
+               <div class="input-group-append">
+                  <button type="submit" class="btn btn-dark btn-sm" name="apply_coupon"
+               value="Apply coupon">Apply coupon</button>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div class="text-right mt-3 mt-md-0">
+               <button type="submit" class="btn btn-dark btn-small" name="update_cart" value="Update cart" disabled="">Update cart</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="row justify-content-end">
+         <div class="col-xl-4 col-lg-5 col-md-8">
+            <div class="border rounded p-4 mt-5">
+               <h4 class="mb-4 font-weight-bold">Cart totals</h4>
+
+               <ul class="list-unstyled mb-4">
+                  <li class="d-flex justify-content-between pb-2 mb-3">
+                     <h6 class="font-weight-light">Subtotal</h6>
+                     <strong class="font-weight-bold">$90.00</strong>
+                  </li>
+
+                  <li class="d-flex justify-content-between pb-2 mb-3">
+                     <h6 class="font-weight-light">Shipping</h6>
+                     <strong class="font-weight-bold">Free</strong>
+                  </li>
+
+                  <li class="d-flex justify-content-between pb-2">
+                     <h6 class="font-weight-light">Total</h6>
+                     <strong class="font-weight-bold">$90.00</strong>
+                  </li>
+               </ul>
+               <a href="#" class="btn btn-primary btn-sm btn-block">Proceed to checkout</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+@@include('footer.htm')

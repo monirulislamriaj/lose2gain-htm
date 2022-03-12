@@ -1,0 +1,59 @@
+@@include('header.htm', {"no-shapes": "d-none", "bg": "bg-white"})
+
+<section class="pt-50">
+   <div class="container">
+      <div class="row justify-content-center">
+         <div class="col-12 text-center mb-30">
+            <h2 class="section-title">Select Payment Method</h2>
+         </div>
+      </div>
+
+      <div class="payment-methods">
+         <form action="#!" method="post">
+            <div class="row">
+               <div class="col-lg-3 col-md-6 mt-20">
+                  <div class="custiom-radio-bordered">
+                     <input type="radio" id="pay-1" class="d-none" name="product-color" checked>
+                     <label class="d-block text-center" for="pay-1">
+                        <img src="images/payment/cash-on-delivery.png" alt="">
+                        <p class="mt-2 text-black-500 font-weight-600">Cash on delivery</p>
+                     </label>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 mt-20">
+                  <div class="custiom-radio-bordered">
+                     <input type="radio" id="pay-2" class="d-none" name="product-color" checked>
+                     <label class="d-block text-center" for="pay-2">
+                        <img src="images/payment/card-payemt.png" alt="">
+                        <p class="mt-2 text-black-500 font-weight-600">Card Payment</p>
+                     </label>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 mt-20">
+                  <div class="custiom-radio-bordered">
+                     <input type="radio" id="pay-3" class="d-none" name="product-color" checked>
+                     <label class="d-block text-center" for="pay-3">
+                        <img src="images/payment/nagad.png" alt="">
+                        <p class="text-black-500 font-weight-600">Nagad</p>
+                     </label>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 mt-20">
+                  <div class="custiom-radio-bordered">
+                     <input type="radio" id="pay-4" class="d-none" name="product-color" checked>
+                     <label class="d-block text-center" for="pay-4">
+                        <img src="images/payment/bkash.png" alt="">
+                        <p class="mt-2 text-black-500 font-weight-600">Bkash</p>
+                     </label>
+                  </div>
+               </div>
+               <div class="col-12 text-right mt-30">
+                  <button type="submit" class="btn btn-primary btn-sm">Proceed to checkout</button>
+               </div>
+            </div>
+         </form>
+      </div>
+   </div>
+</section>
+
+@@include('footer.htm')
